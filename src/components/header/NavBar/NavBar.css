@@ -1,0 +1,12 @@
+.navbar a{
+    color: black;
+}
+
+.logoContainer{
+    display: flex;
+}
+
+.productContainer{
+    display: flex;
+    gap: 3.125rem;
+}

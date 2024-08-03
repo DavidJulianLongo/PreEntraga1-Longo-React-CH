@@ -1,0 +1,11 @@
+.cart-container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: .3125rem;
+    width: 9.875rem;
+}
+
+.cart-container img{
+    width: 2rem;
+}
