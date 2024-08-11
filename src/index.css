@@ -12,6 +12,9 @@ a{
 }
 
 body {
+    height: 100vh;
     font-family: "Montserrat", sans-serif;
-    background-color: #ffffff96;
+    background-image: url('../public/fondo.jpg');
+    background-size: cover;
+    backdrop-filter: blur(.3125rem);
 }

@@ -8,7 +8,7 @@ import { LogoComponet } from '../LogoComponent/LogoComponent'
 export const NavBar = () =>{
     return(
         <>
-            <nav className="navbar">
+            <nav className="navbar ">
                 <div className='logoContainer'>
                     <LogoComponet />
                 </div>
