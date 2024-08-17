@@ -1,11 +1,12 @@
 .cart-container{
     align-items: center;
+    border-left:  3px solid #ffffff2c;;
     display: flex;
     justify-content: center;
-    gap: .3125rem;
-    width: 9.875rem;
+    margin-left: 1.25rem;
+    width: 8rem;
 }
 
 .cart-container img{
-    width: 2rem;
+    width: 4rem;
 }

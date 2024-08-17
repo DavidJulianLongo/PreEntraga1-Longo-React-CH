@@ -1,0 +1,38 @@
+.banner-container{
+    width: 90%;
+    margin: 0 auto;
+    height: calc(100vh - 104px);
+    position: relative;
+}
+
+.banner-content{
+    max-width: 31.25rem;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+}
+
+.logo-motorola{
+    width: 70%;
+    margin-right: .875rem;
+}
+
+.logo-edge50ultra{
+    width: 120px;
+}
+
+.banner-content h1{
+    font-size: 4rem;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.banner-content strong{
+    font-weight: 700;
+}
+
+.banner-content p{
+    font-size: 1.5rem;
+    font-weight: 300;
+}

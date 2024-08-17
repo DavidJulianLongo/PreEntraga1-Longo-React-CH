@@ -1,11 +1,26 @@
-.navbar a, p{
-    color: rgb(0, 0, 0);
+.nav{
+    align-items: center;
+    border-bottom: 2px solid #ffffff2c;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem !important;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.nav a, p{
+    color: #ffffff;
+    font-weight: 700;
 }
 
 .logoContainer{
     display: flex;
+    padding: .625rem 0;
 }
 
+.navbar{
+    padding: 0 !important;
+}
 .productContainer{
     display: flex;
     gap: 3.125rem;
