@@ -1,3 +1,6 @@
+.logo-container{
+    padding: 0 !important;
+}
 .logo{
     width: 3.75rem;
     margin-right: .625rem;

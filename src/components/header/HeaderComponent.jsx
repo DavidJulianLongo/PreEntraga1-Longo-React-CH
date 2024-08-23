@@ -8,7 +8,7 @@ export const HeaderComponent = () => {
     <>
       <header>
         <NavBar />
-        <BannerContentComponent imgSrc1='../../src/assets/img/header/mlogowhite.png' imgSrc2='../../src/assets/img/header/edge50ultra.png' text='Intelligence meets art.'/>
+        <BannerContentComponent imgSrc1='src/assets/img/header/mlogowhite.png' imgSrc2='src/assets/img/header/edge50ultra.png' text='Intelligence meets art.'/>
       </header>
     </>
 

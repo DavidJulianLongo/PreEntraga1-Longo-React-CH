@@ -11,8 +11,8 @@ export const NavBar = () => {
     return (
         <>
             <nav className="nav">
-                <div className='logoContainer'>
-                    <LogoComponent imgSrc='../../src/assets/img/header/mlogo.png' text='M-park' />
+                <div className='logo-container'>
+                    <LogoComponent imgSrc='src/assets/img/header/mlogo.png' text='M-park' />
                 </div>
                 <div className="navbar">
                     <div className="productContainer">
