@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import './ProductCard.css';
+import './CardComponent.css';
 
-export const ProductCard = ({ product }) => {
+export const CardComponent = ({ product }) => {
     const { title, price, images } = product;
     const initialColorKey = Object.keys(images)[0];
     const [currentImage, setCurrentImage] = useState(images[initialColorKey].url);

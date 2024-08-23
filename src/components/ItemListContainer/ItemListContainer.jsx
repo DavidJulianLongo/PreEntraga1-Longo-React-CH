@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProductCard } from './cards/ProductCard'
+import { CardComponent} from './cards/CardComponent'
 
 const products = [
     {
@@ -169,7 +169,7 @@ export const ItemListContainer = () => {
         <>
             <div className="product-list">
                 {products.map((product, index) => (
-                    <ProductCard key={index} product={product} />
+                    <CardComponent key={index} product={product} />
                 ))}
             </div>
         </>
