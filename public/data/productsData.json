@@ -1,0 +1,154 @@
+[
+    {
+        "id": 100,
+        "title": "Motorola Edge 50 Ultra",
+        "price": "1.499.999",
+        "images": {
+            "peachFuzz": {
+                "url": "/src/assets/img/cards/edge_50_ultra/peach_fuzz_cargador.png",
+                "color": "#f5c6a5"
+            },
+            "forestGray": {
+                "url": "/src/assets/img/cards/edge_50_ultra/forest_gray_cargador.png",
+                "color": "#273130"
+            },
+            "nordicWood": {
+                "url": "/src/assets/img/cards/edge_50_ultra/nordic_wood_cargador.png",
+                "color": "#D9CDBE"
+            }
+        }
+    },
+    {
+        "id": 101,
+        "title": "Motorola Edge 50 Pro",
+        "price": "1.099.999",
+        "images": {
+            "luxLavander": {
+                "url": "/src/assets/img/cards/edge_50_pro/lux_lavander_cargador.png",
+                "color": "#8D94C6"
+            },
+            "forestGray": {
+                "url": "/src/assets/img/cards/edge_50_pro/moonlight_pearl_cargador.png",
+                "color": "#C8C7C4"
+            },
+            "nordicWood": {
+                "url": "/src/assets/img/cards/edge_50_pro/black_beauty_cargador.png",
+                "color": "#414044"
+            }
+        }
+    },
+    {
+        "id": 102,
+        "title": "Motorola Edge 50 Fusion",
+        "price": "799.999",
+        "images": {
+            "forestBlue": {
+                "url": "/src/assets/img/cards/edge_50_fusion/forest_blue_cargador.png",
+                "color": "#4C5864"
+            },
+            "MarshmalowBlue": {
+                "url": "/src/assets/img/cards/edge_50_fusion/mashmallow_blue_cargador.png",
+                "color": "#B4C2CD"
+            },
+            "hotPink": {
+                "url": "/src/assets/img/cards/edge_50_fusion/hot_pink_cargador.png",
+                "color": "#97385D"
+            }
+        }
+    },
+    {
+        "id": 103,
+        "title": "Motorola Edge 40 ",
+        "price": "899.999",
+        "images": {
+            "negroEclipse": {
+                "url": "/src/assets/img/cards/edge_40/negro_eclipse_cargador.png",
+                "color": "#292929"
+            },
+            "verdeOliva": {
+                "url": "/src/assets/img/cards/edge_40/verde_oliva_cargador.png",
+                "color": "#A1B194"
+            },
+            "vivaMagenta": {
+                "url": "/src/assets/img/cards/edge_40/viva_magenta_cargador.png",
+                "color": "#A72545"
+            }
+        }
+    },
+    {
+        "id": 104,
+        "title": "Motorola Edge 50 Pro",
+        "price": "1.099.999",
+        "images": {
+            "luxLavander": {
+                "url": "/src/assets/img/cards/edge_50_pro/lux_lavander_cargador.png",
+                "color": "#8D94C6"
+            },
+            "forestGray": {
+                "url": "/src/assets/img/cards/edge_50_pro/moonlight_pearl_cargador.png",
+                "color": "#C8C7C4"
+            },
+            "nordicWood": {
+                "url": "/src/assets/img/cards/edge_50_pro/black_beauty_cargador.png",
+                "color": "#414044"
+            }
+        }
+    },
+    {
+        "id": 105,
+        "title": "Motorola Edge 50 Pro",
+        "price": "1.099.999",
+        "images": {
+            "luxLavander": {
+                "url": "/src/assets/img/cards/edge_50_pro/lux_lavander_cargador.png",
+                "color": "#8D94C6"
+            },
+            "forestGray": {
+                "url": "/src/assets/img/cards/edge_50_pro/moonlight_pearl_cargador.png",
+                "color": "#C8C7C4"
+            },
+            "nordicWood": {
+                "url": "/src/assets/img/cards/edge_50_pro/black_beauty_cargador.png",
+                "color": "#414044"
+            }
+        }
+    },
+    {
+        "id": 106,
+        "title": "Motorola Edge 50 Pro",
+        "price": "1.099.999",
+        "images": {
+            "luxLavander": {
+                "url": "/src/assets/img/cards/edge_50_pro/lux_lavander_cargador.png",
+                "color": "#8D94C6"
+            },
+            "forestGray": {
+                "url": "/src/assets/img/cards/edge_50_pro/moonlight_pearl_cargador.png",
+                "color": "#C8C7C4"
+            },
+            "nordicWood": {
+                "url": "/src/assets/img/cards/edge_50_pro/black_beauty_cargador.png",
+                "color": "#414044"
+            }
+        }
+    },
+    {
+        "id": 107,
+        "title": "Motorola Edge 50 Pro",
+        "price": "1.099.999",
+        "images": {
+            "luxLavander": {
+                "url": "/src/assets/img/cards/edge_50_pro/lux_lavander_cargador.png",
+                "color": "#8D94C6"
+            },
+            "forestGray": {
+                "url": "/src/assets/img/cards/edge_50_pro/moonlight_pearl_cargador.png",
+                "color": "#C8C7C4"
+            },
+            "nordicWood": {
+                "url": "/src/assets/img/cards/edge_50_pro/black_beauty_cargador.png",
+                "color": "#414044"
+            }
+        }
+    }
+]

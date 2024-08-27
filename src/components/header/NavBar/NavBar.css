@@ -9,8 +9,12 @@
 }
 
 .nav a, p{
-    color: #ffffff;
-    font-weight: 700;
+    color: #001428;
+    font-weight: 600;
+}
+
+.productContainer{
+    margin-bottom: 0;
 }
 
 .logoContainer{

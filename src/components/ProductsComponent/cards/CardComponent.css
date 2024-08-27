@@ -75,6 +75,7 @@
     border-radius: .3125rem;
     cursor: pointer;
     width: 100%;
+    transition: .2s ease ;
 }
 
 .card-btn:hover {

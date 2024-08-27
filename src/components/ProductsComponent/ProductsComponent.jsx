@@ -1,20 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { CardComponent } from './cards/CardComponent';
 
-export const ItemListContainer = () => {
+export const ProductsComponent= () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        const fetchProducts = async () => {
+        const productsList = async () => {
             const response = await fetch('/data/productsData.json');
             const data = await response.json();
             setProducts(data);
         };
-        fetchProducts();
+        productsList();
     }, []);
 
     return (
         <>
+            <h1>products</h1>
             <div className="product-list">
                 {products.map((product, id) => (
                     <CardComponent key={id} product={product} />
@@ -23,17 +24,3 @@ export const ItemListContainer = () => {
         </>
     );
 };
-
-
-// export const ItemListContainer = () => {
-
-//     return (
-//         <>
-//             <div className="product-list">
-//                 {products.map((product, id) => (
-//                     <CardComponent key={id} product={product} />
-//                 ))}
-//             </div>
-//         </>
-//     );
-// };

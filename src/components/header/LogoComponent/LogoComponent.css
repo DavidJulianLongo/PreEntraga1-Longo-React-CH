@@ -2,11 +2,11 @@
     padding: 0 !important;
 }
 .logo{
-    width: 3.75rem;
+    width: 3rem;
     margin-right: .625rem;
+    color: #001428;
 }
 
 .mpark {
     font-size: 1.5rem;
-    
 }

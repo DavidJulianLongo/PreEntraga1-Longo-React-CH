@@ -12,7 +12,7 @@ export const CardComponent = ({ product }) => {
 
     return (
         <>
-            <div className="product-card">
+            <article className="product-card">
                 <img src={currentImage} alt={title} />
                 <h4 className="product-title">{title}</h4>
                 <div className="colors">
@@ -27,7 +27,7 @@ export const CardComponent = ({ product }) => {
                 </div>
                 <p className="price">$ {price}</p>
                 <button className="card-btn">Ver más</button>
-            </div>
+            </article>
         </>
 
     );

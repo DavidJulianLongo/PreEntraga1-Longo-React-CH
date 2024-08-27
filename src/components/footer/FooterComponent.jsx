@@ -1,5 +1,5 @@
 
-import { NavItems } from '../header/NavItems/NavItems';
+import { NavItem } from '../header/NavItem/NavItem';
 import './FooterComponent.css';
 
 
@@ -11,7 +11,7 @@ export const FooterComponent = () => {
             <footer>
                 <div className="productContainer">
                     {models.map((model, index) => (
-                        <NavItems key={index} model={model} />
+                        <NavItem key={index} model={model} />
                     ))}
                 </div>
             </footer>
