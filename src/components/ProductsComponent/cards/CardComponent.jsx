@@ -1,5 +1,6 @@
-import { useState } from 'react';
 import './CardComponent.css';
+import { useState } from 'react';
+
 
 export const CardComponent = ({ product }) => {
     const { title, price, images } = product;
