@@ -1,7 +1,7 @@
 [
     {
         "id": 100,
-        "title": "motorola edge 50 Ultra",
+        "title": "motorola edge 50 ultra",
         "price": "1.499.999",
         "images": [
             {
@@ -23,7 +23,7 @@
     },
     {
         "id": 101,
-        "title": "Motorola Edge 50 Pro",
+        "title": "motorola edge 50 pro",
         "price": "1.099.999",
         "images": [
             {
@@ -45,7 +45,7 @@
     },
     {
         "id": 102,
-        "title": "Motorola Edge 50 Fusion",
+        "title": "motorola edge 50 fusion",
         "price": "799.999",
         "images": [
             {
@@ -67,7 +67,7 @@
     },
     {
         "id": 103,
-        "title": "Motorola Edge 40",
+        "title": "motorola edge 40",
         "price": "899.999",
         "images": [
             {
@@ -89,7 +89,7 @@
     },
     {
         "id": 104,
-        "title": "Motorola Edge 40 Pro",
+        "title": "motorola edge 40 pro",
         "price": "1.399.999",
         "images": [
             {
@@ -106,7 +106,7 @@
     },
     {
         "id": 105,
-        "title": "Motorola Edge 40 Neo",
+        "title": "motorola edge 40 neo",
         "price": "749.999",
         "images": [
             {
@@ -133,7 +133,7 @@
     },
     {
         "id": 106,
-        "title": "Motorola Razr 40",
+        "title": "motorola razr 40",
         "price": "1.099.999",
         "images": [
             {
@@ -155,7 +155,7 @@
     },
     {
         "id": 107,
-        "title": "Motorola Razr 40 Ultra",
+        "title": "motorola razr 40 ultra",
         "price": "1.699.999",
         "images": [
             {
@@ -177,6 +177,62 @@
                 "colorName": "peachFuzz",
                 "url": "/src/assets/img/cards/razr_40_ultra/peach_fuzz_cargador.png",
                 "color": "#ECB190"
+            }
+        ]
+    },
+    {
+        "id": 108,
+        "title": "moto e22 4/64",
+        "price": "249.999",
+        "images": [
+            {
+                "colorName": "azul",
+                "url": "/src/assets/img/cards/moto_e22/azul_cargador.png",
+                "color": "#7B8AA7"
+            },
+            {
+                "colorName": "negro",
+                "url": "/src/assets/img/cards/moto_e22/negro_cargador.png",
+                "color": "#000000"
+            }
+        ]
+    },
+    {
+        "id": 109,
+        "title": "moto e14",
+        "price": "249.999",
+        "images": [
+            {
+                "colorName": "gris",
+                "url": "/src/assets/img/cards/moto_e14/gris_cargador.png",
+                "color": "#303D57"
+            },
+            {
+                "colorName": "verde",
+                "url": "/src/assets/img/cards/moto_e14/verde_cargador.png",
+                "color": "#CFD2AC"
+            },
+            {
+                "colorName": "lavanda",
+                "url": "/src/assets/img/cards/moto_e14/lavanda_cargador.png",
+                "color": "#BEA7C7"
+            }
+        ]
+    },
+    {
+        "id": 110,
+        "title": "moto e13",
+        "price": "209.999",
+        "images": [
+            {
+                "colorName": "turquesa",
+                "url": "/src/assets/img/cards/moto_e13/turquesa_cargador.png",
+                "color": "#428294"
+            },
+            {
+                "colorName": "natural",
+                "url": "/src/assets/img/cards/moto_e13/natural_cargador.png",
+                "color": "#E6E0CF"
             }
         ]
     }

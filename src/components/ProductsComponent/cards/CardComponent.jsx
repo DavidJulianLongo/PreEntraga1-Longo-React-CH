@@ -20,8 +20,8 @@ export const CardComponent = ({ product }) => {
                             key={index}
                             style={{ backgroundColor: image.color }}
                             className="color-dot"
-                            onClick={() => handleImageChange(index)}
-                        ></button>
+                            onClick={() => handleImageChange(index)} >
+                        </button>
                     ))}
                 </div>
                 <p className="price">$ {price}</p>
