@@ -1,19 +1,15 @@
-import { Link } from 'react-router-dom';
 import './LogoComponent.css'
 
-export const LogoComponent = ({imgSrc, text}) => {
+export const LogoComponent = ({ imgSrc, text }) => {
     return (
         <>
-              <Link to={'/'} className="mpark">
+            <div className="mpark">
                 <img src={imgSrc} alt="Logo M-Park" className="logo" />
-                {text}
-            </Link>
-            
+                <p>{text}</p>
+            </div>
+
         </>
     );
 }
 
 
-{/* <a className='mpark'>
-                <Link to={'/'}></Link>
-                <img src={imgSrc} alt="Logo M-Park" className='logo' />{text}</a> */}

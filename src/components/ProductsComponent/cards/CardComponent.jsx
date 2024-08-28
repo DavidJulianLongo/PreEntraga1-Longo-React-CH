@@ -1,14 +1,12 @@
 import './CardComponent.css';
 import { useState } from 'react';
 
-
 export const CardComponent = ({ product }) => {
     const { title, price, images } = product;
-    const initialColorKey = Object.keys(images)[0];
-    const [currentImage, setCurrentImage] = useState(images[initialColorKey].url);
+    const [currentImage, setCurrentImage] = useState(images[0].url);
 
-    const handleImageChange = (colorKey) => {
-        setCurrentImage(images[colorKey].url);
+    const handleImageChange = (index) => {
+        setCurrentImage(images[index].url);
     };
 
     return (
@@ -17,12 +15,12 @@ export const CardComponent = ({ product }) => {
                 <img src={currentImage} alt={title} />
                 <h4 className="product-title">{title}</h4>
                 <div className="colors">
-                    {Object.keys(images).map((colorKey, index) => (
+                    {images.map((image, index) => (
                         <button
                             key={index}
-                            style={{ backgroundColor: images[colorKey].color }}
+                            style={{ backgroundColor: image.color }}
                             className="color-dot"
-                            onClick={() => handleImageChange(colorKey)}
+                            onClick={() => handleImageChange(index)}
                         ></button>
                     ))}
                 </div>
@@ -30,7 +28,6 @@ export const CardComponent = ({ product }) => {
                 <button className="card-btn">Ver más</button>
             </article>
         </>
-
     );
 };
 

@@ -13,10 +13,6 @@
     font-weight: 600;
 }
 
-.productContainer{
-    margin-bottom: 0;
-}
-
 .logoContainer{
     display: flex;
     padding: .625rem 0;
@@ -25,7 +21,8 @@
 .navbar{
     padding: 0 !important;
 }
-.productContainer{
+.products-list{
     display: flex;
     gap: 3.125rem;
+    margin-bottom: 0;
 }

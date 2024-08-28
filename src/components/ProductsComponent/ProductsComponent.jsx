@@ -1,6 +1,8 @@
+import './ProductsComponent.css';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { CardComponent } from './cards/CardComponent';
+
 
 export const ProductsComponent= () => {
     const {model} = useParams();
@@ -9,7 +11,7 @@ export const ProductsComponent= () => {
 
     useEffect(() => {
         const productsList = async () => {
-            const response = await fetch('/data/products.json');
+            const response = await fetch('/data/cardsProducts.json');
             const data = await response.json();
             setProducts(data);
         };
@@ -17,9 +19,7 @@ export const ProductsComponent= () => {
     }, []);
 
     useEffect(() => {
-        //normalizedModel reemplaza los '-' de las url de CardComponent, para que se aplique el filtro
-        const normalizedModel = model.toLowerCase().replace(/-/g, ' ');
-        const filter = products.filter(prod => prod.title.toLowerCase().includes(normalizedModel));
+        const filter = products.filter(prod => prod.title.toLowerCase().includes(model));
     
         setFilteredProducts(filter)
     },[products, model])
@@ -28,7 +28,7 @@ export const ProductsComponent= () => {
     return (
         <>
             <h1>products</h1>
-            <div className="product-list">
+            <div className="products-container">
                 {filteredProducts.map((product, id) => (
                     <CardComponent key={id} product={product} />
                 ))}

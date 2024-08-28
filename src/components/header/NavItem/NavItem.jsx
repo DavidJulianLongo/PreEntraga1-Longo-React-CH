@@ -1,12 +1,21 @@
 import "./NavItem.css";
-import { Link } from 'react-router-dom';
 
-export const NavItem = ({ model, path }) => {
+export const NavItem = ({ text }) => {
     return (
         <>
-            <li>
-                <Link to={path}>{model}</Link>
-            </li>
+            <li>{text}</li>
         </>
     );
-}
+};
+
+
+
+// export const NavItem = ({ model, path }) => {
+//     return (
+//         <>
+//             <li>
+//                 <Link to={path}>{model}</Link>
+//             </li>
+//         </>
+//     );
+// }

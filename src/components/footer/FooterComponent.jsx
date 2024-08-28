@@ -1,5 +1,6 @@
 
 import { NavItem } from '../header/NavItem/NavItem';
+import { Link } from 'react-router-dom';
 import './FooterComponent.css';
 
 
@@ -9,10 +10,15 @@ export const FooterComponent = () => {
     return (
         <>
             <footer>
-                <div className="productContainer">
-                    {models.map((model, index) => (
-                        <NavItem key={index} model={model} />
-                    ))}
+                <div className='footer-products'>
+                    <h4>Modelos</h4>
+                    <ul className="footer-products-list">
+                        {models.map((model, index) => (
+                            <Link to={`/products/${model}`} key={index}>
+                                <NavItem text={model} />
+                            </Link>
+                        ))}
+                    </ul>
                 </div>
             </footer>
         </>

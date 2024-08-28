@@ -1,0 +1,183 @@
+[
+    {
+        "id": 100,
+        "title": "motorola edge 50 Ultra",
+        "price": "1.499.999",
+        "images": [
+            {
+                "colorName": "peachFuzz",
+                "url": "/src/assets/img/cards/edge_50_ultra/peach_fuzz_cargador.png",
+                "color": "#f5c6a5"
+            },
+            {
+                "colorName": "forestGray",
+                "url": "/src/assets/img/cards/edge_50_ultra/forest_gray_cargador.png",
+                "color": "#273130"
+            },
+            {
+                "colorName": "nordicWood",
+                "url": "/src/assets/img/cards/edge_50_ultra/nordic_wood_cargador.png",
+                "color": "#D9CDBE"
+            }
+        ]
+    },
+    {
+        "id": 101,
+        "title": "Motorola Edge 50 Pro",
+        "price": "1.099.999",
+        "images": [
+            {
+                "colorName": "luxLavander",
+                "url": "/src/assets/img/cards/edge_50_pro/lux_lavander_cargador.png",
+                "color": "#8D94C6"
+            },
+            {
+                "colorName": "forestGray",
+                "url": "/src/assets/img/cards/edge_50_pro/moonlight_pearl_cargador.png",
+                "color": "#C8C7C4"
+            },
+            {
+                "colorName": "nordicWood",
+                "url": "/src/assets/img/cards/edge_50_pro/black_beauty_cargador.png",
+                "color": "#414044"
+            }
+        ]
+    },
+    {
+        "id": 102,
+        "title": "Motorola Edge 50 Fusion",
+        "price": "799.999",
+        "images": [
+            {
+                "colorName": "forestBlue",
+                "url": "/src/assets/img/cards/edge_50_fusion/forest_blue_cargador.png",
+                "color": "#4C5864"
+            },
+            {
+                "colorName": "marshmalowBlue",
+                "url": "/src/assets/img/cards/edge_50_fusion/mashmallow_blue_cargador.png",
+                "color": "#B4C2CD"
+            },
+            {
+                "colorName": "hotPink",
+                "url": "/src/assets/img/cards/edge_50_fusion/hot_pink_cargador.png",
+                "color": "#97385D"
+            }
+        ]
+    },
+    {
+        "id": 103,
+        "title": "Motorola Edge 40",
+        "price": "899.999",
+        "images": [
+            {
+                "colorName": "negroEclipse",
+                "url": "/src/assets/img/cards/edge_40/negro_eclipse_cargador.png",
+                "color": "#292929"
+            },
+            {
+                "colorName": "verdeOliva",
+                "url": "/src/assets/img/cards/edge_40/verde_oliva_cargador.png",
+                "color": "#A1B194"
+            },
+            {
+                "colorName": "vivaMagenta",
+                "url": "/src/assets/img/cards/edge_40/viva_magenta_cargador.png",
+                "color": "#A72545"
+            }
+        ]
+    },
+    {
+        "id": 104,
+        "title": "Motorola Edge 40 Pro",
+        "price": "1.399.999",
+        "images": [
+            {
+                "colorName": "celesteGlaciar",
+                "url": "/src/assets/img/cards/edge_40_pro/celeste_glaciar_cargador.png",
+                "color": "#91ACD7"
+            },
+            {
+                "colorName": "negroCuarzo",
+                "url": "/src/assets/img/cards/edge_40_pro/negro_cuarzo_cargador.png",
+                "color": "#000000"
+            }
+        ]
+    },
+    {
+        "id": 105,
+        "title": "Motorola Edge 40 Neo",
+        "price": "749.999",
+        "images": [
+            {
+                "colorName": "blackBeauty",
+                "url": "/src/assets/img/cards/edge_40_neo/black_beauty_cargador.png",
+                "color": "#252527"
+            },
+            {
+                "colorName": "caneelBay",
+                "url": "/src/assets/img/cards/edge_40_neo/caneel_bay_cargador.png",
+                "color": "#05768F"
+            },
+            {
+                "colorName": "soothingSea",
+                "url": "/src/assets/img/cards/edge_40_neo/soothing_sea_cargador.png",
+                "color": "#99B3AE"
+            },
+            {
+                "colorName": "peachFuzz",
+                "url": "/src/assets/img/cards/edge_40_neo/peach_fuzz_cargador.png",
+                "color": "#f5c6a5"
+            }
+        ]
+    },
+    {
+        "id": 106,
+        "title": "Motorola Razr 40",
+        "price": "1.099.999",
+        "images": [
+            {
+                "colorName": "blancoMarfil",
+                "url": "/src/assets/img/cards/razr_40/blanco_marfil_cargador.png",
+                "color": "#C2BEB5"
+            },
+            {
+                "colorName": "grisMate",
+                "url": "/src/assets/img/cards/razr_40/gris_mate_cargador.png",
+                "color": "#3E4645"
+            },
+            {
+                "colorName": "moradoAmatista",
+                "url": "/src/assets/img/cards/razr_40/morado_amatista_cargador.png",
+                "color": "#685178"
+            }
+        ]
+    },
+    {
+        "id": 107,
+        "title": "Motorola Razr 40 Ultra",
+        "price": "1.699.999",
+        "images": [
+            {
+                "colorName": "celesteGlaciar",
+                "url": "/src/assets/img/cards/razr_40_ultra/celeste_glaciar_cargador.png",
+                "color": "#607790"
+            },
+            {
+                "colorName": "negroInfinito",
+                "url": "/src/assets/img/cards/razr_40_ultra/negro_infinito_cargador.png",
+                "color": "#161617"
+            },
+            {
+                "colorName": "vivaMagenta",
+                "url": "/src/assets/img/cards/razr_40_ultra/viva_magenta_cargador.png",
+                "color": "#B22445"
+            },
+            {
+                "colorName": "peachFuzz",
+                "url": "/src/assets/img/cards/razr_40_ultra/peach_fuzz_cargador.png",
+                "color": "#ECB190"
+            }
+        ]
+    }
+]
