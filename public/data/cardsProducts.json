@@ -1,189 +1,207 @@
 [
     {
-        "id": 100,
+        "prodId": 100,
         "title": "motorola edge 50 ultra",
         "price": "1.499.999",
+        "capacity": "256GB",
+        "description": "El Motorola Edge 50 Ultra es un smartphone de alta gama con pantalla de 6.8 pulgadas, procesador de última generación y una cámara potente para capturas impresionantes.",
         "images": [
             {
-                "colorName": "peachFuzz",
+                "colorName": "peach fuzz",
                 "url": "/src/assets/img/cards/edge_50_ultra/peach_fuzz_cargador.png",
                 "color": "#f5c6a5"
             },
             {
-                "colorName": "forestGray",
+                "colorName": "forest gray",
                 "url": "/src/assets/img/cards/edge_50_ultra/forest_gray_cargador.png",
                 "color": "#273130"
             },
             {
-                "colorName": "nordicWood",
+                "colorName": "nordic wood",
                 "url": "/src/assets/img/cards/edge_50_ultra/nordic_wood_cargador.png",
                 "color": "#D9CDBE"
             }
         ]
     },
     {
-        "id": 101,
+        "prodId": 101,
         "title": "motorola edge 50 pro",
         "price": "1.099.999",
+        "capacity": "128GB",
+        "description": "El Motorola Edge 50 Pro combina un diseño elegante con un rendimiento potente, ideal para usuarios que buscan un smartphone con características avanzadas y gran capacidad de respuesta.",
         "images": [
             {
-                "colorName": "luxLavander",
+                "colorName": "lux lavander",
                 "url": "/src/assets/img/cards/edge_50_pro/lux_lavander_cargador.png",
                 "color": "#8D94C6"
             },
             {
-                "colorName": "forestGray",
+                "colorName": "forest gray",
                 "url": "/src/assets/img/cards/edge_50_pro/moonlight_pearl_cargador.png",
                 "color": "#C8C7C4"
             },
             {
-                "colorName": "nordicWood",
+                "colorName": "nordic wood",
                 "url": "/src/assets/img/cards/edge_50_pro/black_beauty_cargador.png",
                 "color": "#414044"
             }
         ]
     },
     {
-        "id": 102,
+        "prodId": 102,
         "title": "motorola edge 50 fusion",
         "price": "799.999",
+        "capacity": "128GB",
+        "description": "El Motorola Edge 50 Fusion es una opción asequible con un diseño moderno y características sólidas, perfecto para quienes buscan un equilibrio entre precio y rendimiento.",
         "images": [
             {
-                "colorName": "forestBlue",
+                "colorName": "forest blue",
                 "url": "/src/assets/img/cards/edge_50_fusion/forest_blue_cargador.png",
                 "color": "#4C5864"
             },
             {
-                "colorName": "marshmalowBlue",
+                "colorName": "marshmalow blue",
                 "url": "/src/assets/img/cards/edge_50_fusion/mashmallow_blue_cargador.png",
                 "color": "#B4C2CD"
             },
             {
-                "colorName": "hotPink",
+                "colorName": "hot pink",
                 "url": "/src/assets/img/cards/edge_50_fusion/hot_pink_cargador.png",
                 "color": "#97385D"
             }
         ]
     },
     {
-        "id": 103,
+        "prodId": 103,
         "title": "motorola edge 40",
         "price": "899.999",
+        "capacity": "256GB",
+        "description": "El Motorola Edge 40 ofrece un rendimiento equilibrado con una excelente cámara y una pantalla vibrante, ideal para el usuario promedio que busca un smartphone confiable.",
         "images": [
             {
-                "colorName": "negroEclipse",
+                "colorName": "negro eclipse",
                 "url": "/src/assets/img/cards/edge_40/negro_eclipse_cargador.png",
                 "color": "#292929"
             },
             {
-                "colorName": "verdeOliva",
+                "colorName": "verde oliva",
                 "url": "/src/assets/img/cards/edge_40/verde_oliva_cargador.png",
                 "color": "#A1B194"
             },
             {
-                "colorName": "vivaMagenta",
+                "colorName": "viva magenta",
                 "url": "/src/assets/img/cards/edge_40/viva_magenta_cargador.png",
                 "color": "#A72545"
             }
         ]
     },
     {
-        "id": 104,
+        "prodId": 104,
         "title": "motorola edge 40 pro",
         "price": "1.399.999",
+        "capacity": "512GB",
+        "description": "El Motorola Edge 40 Pro es un dispositivo de gama alta con especificaciones premium, incluyendo una gran capacidad de almacenamiento y una pantalla de alta resolución para una experiencia excepcional.",
         "images": [
             {
-                "colorName": "celesteGlaciar",
+                "colorName": "celeste glaciar",
                 "url": "/src/assets/img/cards/edge_40_pro/celeste_glaciar_cargador.png",
                 "color": "#91ACD7"
             },
             {
-                "colorName": "negroCuarzo",
+                "colorName": "negro cuarzo",
                 "url": "/src/assets/img/cards/edge_40_pro/negro_cuarzo_cargador.png",
                 "color": "#000000"
             }
         ]
     },
     {
-        "id": 105,
+        "prodId": 105,
         "title": "motorola edge 40 neo",
         "price": "749.999",
+        "capacity": "128GB",
+        "description": "El Motorola Edge 40 Neo ofrece un diseño atractivo con un rendimiento decente, ideal para quienes buscan un smartphone de buena calidad sin romper el banco.",
         "images": [
             {
-                "colorName": "blackBeauty",
+                "colorName": "black beauty",
                 "url": "/src/assets/img/cards/edge_40_neo/black_beauty_cargador.png",
                 "color": "#252527"
             },
             {
-                "colorName": "caneelBay",
+                "colorName": "caneel bay",
                 "url": "/src/assets/img/cards/edge_40_neo/caneel_bay_cargador.png",
                 "color": "#05768F"
             },
             {
-                "colorName": "soothingSea",
+                "colorName": "soothing sea",
                 "url": "/src/assets/img/cards/edge_40_neo/soothing_sea_cargador.png",
                 "color": "#99B3AE"
             },
             {
-                "colorName": "peachFuzz",
+                "colorName": "peach fuzz",
                 "url": "/src/assets/img/cards/edge_40_neo/peach_fuzz_cargador.png",
                 "color": "#f5c6a5"
             }
         ]
     },
     {
-        "id": 106,
+        "prodId": 106,
         "title": "motorola razr 40",
         "price": "1.099.999",
+        "capacity": "256GB",
+        "description": "El Motorola Razr 40 presenta un diseño plegable innovador y características modernas, ofreciendo una experiencia única con su pantalla flexible y cámaras avanzadas.",
         "images": [
             {
-                "colorName": "blancoMarfil",
+                "colorName": "blanco marfil",
                 "url": "/src/assets/img/cards/razr_40/blanco_marfil_cargador.png",
                 "color": "#C2BEB5"
             },
             {
-                "colorName": "grisMate",
+                "colorName": "gris mate",
                 "url": "/src/assets/img/cards/razr_40/gris_mate_cargador.png",
                 "color": "#3E4645"
             },
             {
-                "colorName": "moradoAmatista",
+                "colorName": "morado amatista",
                 "url": "/src/assets/img/cards/razr_40/morado_amatista_cargador.png",
                 "color": "#685178"
             }
         ]
     },
     {
-        "id": 107,
+        "prodId": 107,
         "title": "motorola razr 40 ultra",
         "price": "1.699.999",
+        "capacity": "512GB",
+        "description": "El Motorola Razr 40 Ultra lleva el diseño plegable al siguiente nivel con especificaciones premium y una experiencia de usuario mejorada, ideal para entusiastas de la tecnología.",
         "images": [
             {
-                "colorName": "celesteGlaciar",
+                "colorName": "celeste glaciar",
                 "url": "/src/assets/img/cards/razr_40_ultra/celeste_glaciar_cargador.png",
                 "color": "#607790"
             },
             {
-                "colorName": "negroInfinito",
+                "colorName": "negro infinito",
                 "url": "/src/assets/img/cards/razr_40_ultra/negro_infinito_cargador.png",
                 "color": "#161617"
             },
             {
-                "colorName": "vivaMagenta",
+                "colorName": "viva magenta",
                 "url": "/src/assets/img/cards/razr_40_ultra/viva_magenta_cargador.png",
                 "color": "#B22445"
             },
             {
-                "colorName": "peachFuzz",
+                "colorName": "peach fuzz",
                 "url": "/src/assets/img/cards/razr_40_ultra/peach_fuzz_cargador.png",
                 "color": "#ECB190"
             }
         ]
     },
     {
-        "id": 108,
+        "prodId": 108,
         "title": "moto e22 4/64",
         "price": "249.999",
+        "capacity": "64GB",
+        "description": "El Moto E22 ofrece un rendimiento básico con un diseño compacto y duradero, ideal para usuarios que necesitan un teléfono sencillo y accesible.",
         "images": [
             {
                 "colorName": "azul",
@@ -198,9 +216,11 @@
         ]
     },
     {
-        "id": 109,
+        "prodId": 109,
         "title": "moto e14",
         "price": "249.999",
+        "capacity": "64GB",
+        "description": "El Moto E14 es una opción económica con características esenciales y un diseño atractivo, ideal para aquellos que buscan un teléfono confiable a bajo costo.",
         "images": [
             {
                 "colorName": "gris",
@@ -220,9 +240,11 @@
         ]
     },
     {
-        "id": 110,
+        "prodId": 110,
         "title": "moto e13",
         "price": "209.999",
+        "capacity": "32GB",
+        "description": "El Moto E13 es el modelo más asequible con las funcionalidades básicas necesarias para el uso diario, perfecto para quienes buscan un teléfono económico y eficiente.",
         "images": [
             {
                 "colorName": "turquesa",

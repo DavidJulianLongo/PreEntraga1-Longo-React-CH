@@ -5,9 +5,9 @@ import { CardComponent } from './cards/CardComponent';
 
 
 export const ProductsComponent= () => {
-    const {model} = useParams();
     const [products, setProducts] = useState([]);
     const [filteredProducts, setFilteredProducts] = useState([]);
+    const {model} = useParams();
 
     useEffect(() => {
         const productsList = async () => {
@@ -20,7 +20,6 @@ export const ProductsComponent= () => {
 
     useEffect(() => {
         const filter = products.filter(prod => prod.title.toLowerCase().includes(model));
-    
         setFilteredProducts(filter)
     },[products, model])
 
@@ -29,8 +28,8 @@ export const ProductsComponent= () => {
         <>
             <h1>products</h1>
             <div className="products-container">
-                {filteredProducts.map((product, id) => (
-                    <CardComponent key={id} product={product} />
+                {filteredProducts.map((product, index) => (
+                    <CardComponent key={index} product={product} />
                 ))}
             </div>
         </>
