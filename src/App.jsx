@@ -1,9 +1,9 @@
-import { HomeComponent } from './components/HomeView/HomeComponent';
+
 import { HeaderComponent } from './components/header/HeaderComponent';
 import { FooterComponent } from './components/footer/FooterComponent';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { ProductsComponent} from './components/ProductsComponent/ProductsComponent';
-import { ProductDescription} from './components/ProductsView/ProductDescription/ProductDescription';
+import { ItemListContainer} from './components/ProductsComponent/ItemListContainer';
+import { ItemDetailContainer} from './components/ProductsComponent/ItemDetailContainer/ItemDetailContainer';
 
 
 function App() {
@@ -13,9 +13,9 @@ function App() {
       <BrowserRouter>
         <HeaderComponent />
         <Routes>
-          <Route exact path='/' element={<HomeComponent />} />
-          <Route exact path='/products/:model' element={<ProductsComponent />} />
-          <Route exact path='/product/:prodId' element={<ProductDescription />} />
+          <Route exact path='/' element={<ItemListContainer/>} />
+          <Route exact path='/category/:id' element={<ItemListContainer />} />
+          <Route exact path='/item/:id' element={<ItemDetailContainer/>} />
         </Routes>
         <FooterComponent />
       </BrowserRouter>

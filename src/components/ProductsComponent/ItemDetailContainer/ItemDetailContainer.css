@@ -38,13 +38,15 @@
     margin: 1rem auto 2rem auto;
 }
 
+.colors-container{
+    margin-bottom: 1.5625rem;
+    margin-top: 2.25rem;
+}
 .colors-description {
     display: flex;
     flex-wrap: wrap;
     gap: 1.25rem;
     justify-content: space-between;
-    margin-bottom: 1.5625rem;
-    margin-top: 1.5625rem;
 }
 .colordot-container {
     align-items: center;
@@ -64,13 +66,15 @@
     font-weight: 700;
 }
 
+.capacity{
+    margin-bottom: 2.25rem;
+}
 .desciption-capacity{
     align-content: center;
     border-radius: .5rem;
     box-shadow: 0 .125rem .1875rem rgba(0, 0, 0, 0.342);
     background-color: #E5E6E7;
     height: 2.875rem;
-    margin-bottom: 2rem;
     padding: .5rem;
     width: 18.125rem;
 }

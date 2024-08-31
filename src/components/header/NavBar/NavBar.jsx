@@ -19,7 +19,7 @@ export const NavBar = () => {
                 <div className="navbar">
                     <ul className="products-list">
                         {models.map((model, index) => (
-                            <Link to={`/products/${model}`} key={index}>
+                            <Link to={`/category/${model}`} key={index}>
                                 <NavItem text={model} />
                             </Link>
                         ))}

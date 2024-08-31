@@ -10,12 +10,3 @@ export const NavItem = ({ text }) => {
 
 
 
-// export const NavItem = ({ model, path }) => {
-//     return (
-//         <>
-//             <li>
-//                 <Link to={path}>{model}</Link>
-//             </li>
-//         </>
-//     );
-// }

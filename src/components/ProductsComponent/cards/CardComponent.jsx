@@ -1,14 +1,10 @@
 import './CardComponent.css';
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import { Link } from 'react-router-dom';
 
 export const CardComponent = ({ product }) => {
-    const { title, price, images, prodId } = product;
-    const [Image, setImage] = useState(() => images[0].url);
-
-    useEffect(() => {
-        setImage(images[0].url);
-    }, [images]);
+    const { title, price, images, id } = product;
+    const [image, setImage] = useState(images[0].url);
 
     const handleImageChange = (index) => {
         setImage(images[index].url);
@@ -17,7 +13,7 @@ export const CardComponent = ({ product }) => {
     return (
         <>
             <article className="product-card">
-                <img src={Image} alt={title} />
+                <img src={image} alt={title} />
                 <h4 className="product-title">{title}</h4>
                 <div className="colors">
                     {images.map((image, index) => (
@@ -30,7 +26,7 @@ export const CardComponent = ({ product }) => {
                     ))}
                 </div>
                 <p className="price">$ {price}</p>
-                <Link to={`/product/${prodId}`}><button className="card-btn">Ver más</button></Link>
+                <Link to={`/item/${id}`}><button className="card-btn">Ver más</button></Link>
             </article>
         </>
     );

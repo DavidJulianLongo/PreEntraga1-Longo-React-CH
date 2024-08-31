@@ -1,10 +1,11 @@
 [
     {
-        "prodId": 100,
+        "id": 100,
         "title": "motorola edge 50 ultra",
         "price": "1.499.999",
         "capacity": "256GB",
         "description": "El Motorola Edge 50 Ultra es un smartphone de alta gama con pantalla de 6.8 pulgadas, procesador de última generación y una cámara potente para capturas impresionantes.",
+        "modelId": "motorola edge",
         "images": [
             {
                 "colorName": "peach fuzz",
@@ -24,11 +25,12 @@
         ]
     },
     {
-        "prodId": 101,
+        "id": 101,
         "title": "motorola edge 50 pro",
         "price": "1.099.999",
         "capacity": "128GB",
         "description": "El Motorola Edge 50 Pro combina un diseño elegante con un rendimiento potente, ideal para usuarios que buscan un smartphone con características avanzadas y gran capacidad de respuesta.",
+        "modelId": "motorola edge",
         "images": [
             {
                 "colorName": "lux lavander",
@@ -48,11 +50,12 @@
         ]
     },
     {
-        "prodId": 102,
+        "id": 102,
         "title": "motorola edge 50 fusion",
         "price": "799.999",
         "capacity": "128GB",
         "description": "El Motorola Edge 50 Fusion es una opción asequible con un diseño moderno y características sólidas, perfecto para quienes buscan un equilibrio entre precio y rendimiento.",
+        "modelId": "motorola edge",
         "images": [
             {
                 "colorName": "forest blue",
@@ -72,11 +75,12 @@
         ]
     },
     {
-        "prodId": 103,
+        "id": 103,
         "title": "motorola edge 40",
         "price": "899.999",
         "capacity": "256GB",
         "description": "El Motorola Edge 40 ofrece un rendimiento equilibrado con una excelente cámara y una pantalla vibrante, ideal para el usuario promedio que busca un smartphone confiable.",
+        "modelId": "motorola edge",
         "images": [
             {
                 "colorName": "negro eclipse",
@@ -96,11 +100,12 @@
         ]
     },
     {
-        "prodId": 104,
+        "id": 104,
         "title": "motorola edge 40 pro",
         "price": "1.399.999",
         "capacity": "512GB",
         "description": "El Motorola Edge 40 Pro es un dispositivo de gama alta con especificaciones premium, incluyendo una gran capacidad de almacenamiento y una pantalla de alta resolución para una experiencia excepcional.",
+        "modelId": "motorola edge",
         "images": [
             {
                 "colorName": "celeste glaciar",
@@ -115,11 +120,12 @@
         ]
     },
     {
-        "prodId": 105,
+        "id": 105,
         "title": "motorola edge 40 neo",
         "price": "749.999",
         "capacity": "128GB",
         "description": "El Motorola Edge 40 Neo ofrece un diseño atractivo con un rendimiento decente, ideal para quienes buscan un smartphone de buena calidad sin romper el banco.",
+        "modelId": "motorola edge",
         "images": [
             {
                 "colorName": "black beauty",
@@ -144,11 +150,12 @@
         ]
     },
     {
-        "prodId": 106,
+        "id": 106,
         "title": "motorola razr 40",
         "price": "1.099.999",
         "capacity": "256GB",
         "description": "El Motorola Razr 40 presenta un diseño plegable innovador y características modernas, ofreciendo una experiencia única con su pantalla flexible y cámaras avanzadas.",
+        "modelId": "motorola razr",
         "images": [
             {
                 "colorName": "blanco marfil",
@@ -168,11 +175,12 @@
         ]
     },
     {
-        "prodId": 107,
+        "id": 107,
         "title": "motorola razr 40 ultra",
         "price": "1.699.999",
         "capacity": "512GB",
         "description": "El Motorola Razr 40 Ultra lleva el diseño plegable al siguiente nivel con especificaciones premium y una experiencia de usuario mejorada, ideal para entusiastas de la tecnología.",
+        "modelId": "motorola razr",
         "images": [
             {
                 "colorName": "celeste glaciar",
@@ -197,11 +205,12 @@
         ]
     },
     {
-        "prodId": 108,
+        "id": 108,
         "title": "moto e22 4/64",
         "price": "249.999",
         "capacity": "64GB",
         "description": "El Moto E22 ofrece un rendimiento básico con un diseño compacto y duradero, ideal para usuarios que necesitan un teléfono sencillo y accesible.",
+        "modelId": "moto e",
         "images": [
             {
                 "colorName": "azul",
@@ -216,11 +225,12 @@
         ]
     },
     {
-        "prodId": 109,
+        "id": 109,
         "title": "moto e14",
         "price": "249.999",
         "capacity": "64GB",
         "description": "El Moto E14 es una opción económica con características esenciales y un diseño atractivo, ideal para aquellos que buscan un teléfono confiable a bajo costo.",
+        "modelId": "moto e",
         "images": [
             {
                 "colorName": "gris",
@@ -240,11 +250,12 @@
         ]
     },
     {
-        "prodId": 110,
+        "id": 110,
         "title": "moto e13",
         "price": "209.999",
         "capacity": "32GB",
         "description": "El Moto E13 es el modelo más asequible con las funcionalidades básicas necesarias para el uso diario, perfecto para quienes buscan un teléfono económico y eficiente.",
+        "modelId": "moto e",
         "images": [
             {
                 "colorName": "turquesa",
