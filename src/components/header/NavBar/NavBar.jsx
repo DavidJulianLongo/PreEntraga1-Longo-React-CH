@@ -6,7 +6,7 @@ import { NavItem } from '../NavItem/NavItem';
 
 
 export const NavBar = () => {
-    const models = ['motorola razr', 'motorola edge', 'moto g', 'moto e', 'accesorios'];
+    const models = ['motorola razr', 'motorola edge', 'moto g', 'moto e'];
 
     return (
         <>

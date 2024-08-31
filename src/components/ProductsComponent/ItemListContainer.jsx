@@ -23,13 +23,12 @@ export const ItemListContainer = () => {
     }, [id]);
 
     return (
-        <div>
-            <h1>Products</h1>
+        <main>
             <div className="products-container">
                 {products.map((product) => (
                     <CardComponent key={product.id} product={product} />
                 ))}
             </div>
-        </div>
+        </main>
     );
 };
