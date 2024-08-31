@@ -11,7 +11,7 @@ export const ItemListContainer = () => {
         const productsList = async () => {
             const response = await fetch('/data/cardsProducts.json');
             const data = await response.json();
-            // Filtra los productos según el modelId, pero muestra todos los productos en la home
+        
             if (id) {
                 const filtered = data.filter(prod => prod.modelId === id);
                 setProducts(filtered);

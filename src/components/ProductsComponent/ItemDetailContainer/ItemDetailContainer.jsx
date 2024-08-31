@@ -11,7 +11,7 @@ export const ItemDetailContainer = () => {
         const productsList = async () => {
             const response = await fetch('/data/cardsProducts.json');
             const data = await response.json();
-            //busca los el producto segun su id
+            //busca  el producto segun su id
             const getProduct = data.find(prod => prod.id == id);
             setProduct(getProduct);
             setImage(getProduct.images[0].url);

@@ -268,5 +268,122 @@
                 "color": "#E6E0CF"
             }
         ]
+    },
+    {
+        "id": 111,
+        "title": "moto g85 5g",
+        "price": "699.999",
+        "capacity": "256GB",
+        "description": "Pantalla sin bordes de 6.7 pulgadas y sonido Dolby Atmos®",
+        "modelId": "moto g",
+        "images": [
+            {
+                "colorName": "olive green",
+                "url": "/src/assets/img/cards/moto_g85_5g/olive_green_cargador.png",
+                "color": "#B2AE51"
+            },
+            {
+                "colorName": "cobalt blue",
+                "url": "/src/assets/img/cards/moto_g85_5g/cobalt_blue_cargador.png",
+                "color": "#4A54AD"
+            },
+            {
+                "colorName": "urban gray",
+                "url": "/src/assets/img/cards/moto_g85_5g/urban_gray_cargador.png",
+                "color": "#6F7579"
+            }
+            
+        ]
+    },
+    {
+        "id": 112,
+        "title": "moto g84 5g",
+        "price": "599.999",
+        "capacity": "256GB",
+        "description": "Cámara de 50 MP con tecnología Ultra Pixel, OIS y sensor Ultra Gran Angular, Macro y de profundidad.",
+        "modelId": "moto g",
+        "images": [
+            {
+                "colorName": "viva magenta",
+                "url": "/src/assets/img/cards/moto_g84_5g/viva_magenta_cargador.png",
+                "color": "#8E1D37"
+            },
+            {
+                "colorName": "outer space - negro",
+                "url": "/src/assets/img/cards/moto_g84_5g/outer_space_cargador.png",
+                "color": "#2B343D"
+            },
+            {
+                "colorName": "ballad blue - celeste",
+                "url": "/src/assets/img/cards/moto_g84_5g/ballad_blue_cargador.png",
+                "color": "#CDD7DA"
+            }
+            
+        ]
+    },
+    {
+        "id": 113,
+        "title": "moto g54",
+        "price": "549.999",
+        "capacity": "128GB",
+        "description": "Cámara de 50 MP con tecnología Ultra Pixel, OIS y sensor Ultra Gran Angular, Macro y de profundidad.",
+        "modelId": "moto g",
+        "images": [
+            {
+                "colorName": "coronet blue - azul",
+                "url": "/src/assets/img/cards/moto_g54/coronet_blue_cargador.png",
+                "color": "#586D88"
+            },
+            {
+                "colorName": "ambrosia - verde",
+                "url": "/src/assets/img/cards/moto_g54/ambrosia_cargador.png",
+                "color": "#C3D9BA"
+            }
+        ]
+    },
+    {
+        "id": 114,
+        "title": "moto g24 power",
+        "price": "429.999",
+        "capacity": "128GB",
+        "description": "Pantalla brillante de 6.6 pulgadas y audio Dolby Atmos®",
+        "modelId": "moto g",
+        "images": [
+            {
+                "colorName": "glaciar blue",
+                "url": "/src/assets/img/cards/moto_g24_power/glaciar_blue_cargador.png",
+                "color": "#9FADB6"
+            },
+            {
+                "colorName": "ink blue",
+                "url": "/src/assets/img/cards/moto_g24_power/ink_blue_cargador.png",
+                "color": "#43526C"
+            }
+        ]
+    },
+    {
+        "id": 115,
+        "title": "moto g24",
+        "price": "369.999",
+        "capacity": "128GB",
+        "description": "Pantalla brillante de 6.6 pulgadas y 90 Hz con sonido Dolby Atmos®",
+        "modelId": "moto g",
+        "images": [
+            {
+                "colorName": "pink lavander",
+                "url": "/src/assets/img/cards/moto_g24/pink_lavander_cargador.png",
+                "color": "#7F647C"
+            },
+            {
+                "colorName": "ice green",
+                "url": "/src/assets/img/cards/moto_g24/ice_green_cargador.png",
+                "color": "#7D856E"
+            },
+            {
+                "colorName": "mate charcoal",
+                "url": "/src/assets/img/cards/moto_g24/matte_charcoal_cargador.png",
+                "color": "#3A393F"
+            }
+        ]
     }
 ]
