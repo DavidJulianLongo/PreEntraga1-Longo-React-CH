@@ -1,0 +1,36 @@
+.banner-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10rem;
+    margin-top: 1rem;
+}
+
+.banner-image {
+    width: 100%;
+    display: block;
+}
+
+.banner-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.banner-button.left {
+    left: 10px;
+}
+
+.banner-button.right {
+    right: 10px;
+}
+
+.banner-button:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Efecto hover en los botones */
+}

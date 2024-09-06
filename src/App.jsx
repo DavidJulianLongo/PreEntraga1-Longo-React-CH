@@ -1,4 +1,3 @@
-
 import { HeaderComponent } from './components/header/HeaderComponent';
 import { FooterComponent } from './components/footer/FooterComponent';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';

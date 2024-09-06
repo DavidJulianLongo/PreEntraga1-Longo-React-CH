@@ -2,6 +2,7 @@ import './ItemListContainer.css';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { CardComponent } from './cards/CardComponent';
+import { BannerComponent } from '../BannerHome/BannerComponent';
 
 export const ItemListContainer = () => {
     const [products, setProducts] = useState([]);
@@ -24,6 +25,7 @@ export const ItemListContainer = () => {
 
     return (
         <main>
+            <BannerComponent />
             <div className="products-container">
                 {products.map((product) => (
                     <CardComponent key={product.id} product={product} />
