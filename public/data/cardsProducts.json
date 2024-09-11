@@ -205,6 +205,31 @@
         ]
     },
     {
+        "id": 99,
+        "title": "motorola razr 50 ultra",
+        "price": "1.999.999",
+        "capacity": "512GB",
+        "description": "Pantalla externa de 4” y 165 Hz: la primera y más amplia con Gemini de Google.",
+        "modelId": "motorola razr",
+        "images": [
+            {
+                "colorName": "spring green",
+                "url": "/src/assets/img/cards/razr_50_ultra/spring_green.png",
+                "color": "#57674B"
+            },
+            {
+                "colorName": "midnight blue",
+                "url": "/src/assets/img/cards/razr_50_ultra/midnight_blue.png",
+                "color": "#272C3E"
+            },
+            {
+                "colorName": "peach fuzz",
+                "url": "/src/assets/img/cards/razr_50_ultra/peach_fuzz.png",
+                "color": "#FCC7A2"
+            }
+        ]
+    },
+    {
         "id": 108,
         "title": "moto e22 4/64",
         "price": "249.999",
