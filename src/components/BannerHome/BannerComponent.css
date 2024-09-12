@@ -1,13 +1,11 @@
 .banner-container {
     position: relative;
-    margin-bottom: 10rem;
+    margin-bottom: 6.25rem;
     margin-top: 1rem;
 }
 
 .banner-image {
     width: 100%;
-    height: auto;
-    flex-shrink: 0; /* Asegura que las imágenes no se reduzcan */
 }
 
 .banner-button {
@@ -17,18 +15,18 @@
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
     color: #ffffff;
-    font-size: 24px;
-    padding: 10px;
+    font-size: 1rem;
+    padding: .3125rem;
     cursor: pointer;
     z-index: 10;
 }
 
 .banner-button.left {
-    left: 10px;
+    left: .625rem;
 }
 
 .banner-button.right {
-    right: 10px;
+    right: .625rem;
 }
 
 .banner-button:hover {

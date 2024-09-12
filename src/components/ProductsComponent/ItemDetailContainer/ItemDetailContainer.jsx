@@ -7,6 +7,7 @@ export const ItemDetailContainer = () => {
     const [product, setProduct] = useState();
     const [selectedProduct, setSelectedProduct] = useState();
     const [colorSelected, setColorSelected] = useState(false);
+    const [quantity, setQuantity] = useState(1);
     const { id } = useParams();
     const [, , addItem] = useContext(CartContext);
 
@@ -21,22 +22,38 @@ export const ItemDetailContainer = () => {
         productModel();
     }, [id]);
 
-    if (!product || !selectedProduct) return null;
+    if (!product) return null;
+
 
     const handleAddCart = () => {
-        const productColor = {
-            ...product,
-            image: selectedProduct.url,
-            color: selectedProduct.colorName,
-        };
-        addItem(productColor);
-        console.log(productColor)
+        const updatedCart = addItem(
+            {
+                id: product.id,
+                title: product.title,
+                price: product.price,
+                color: selectedProduct.colorName,
+            },
+            quantity
+        );
+        console.log(updatedCart);
     };
 
     const handleColorSelection = (image) => {
         setSelectedProduct(image);
         setColorSelected(true);
     }
+
+    const handleIncrement = () => {
+        if (quantity < 10) {
+            setQuantity(quantity + 1);
+        }
+    };
+
+    const handleDecrement = () => {
+        if (quantity > 1) {
+            setQuantity(quantity - 1);
+        }
+    };
 
     const ButtonDisabled = !colorSelected;
 
@@ -70,6 +87,14 @@ export const ItemDetailContainer = () => {
                         <h6>Capacidad:</h6>
                         <div className='desciption-capacity'>
                             <p>{product.capacity}</p>
+                        </div>
+                    </div>
+                    <div className='quantity-container'>
+                        <h6>Cantidad:</h6>
+                        <div className='quantity-controls'>
+                            <button onClick={handleDecrement} className='quantity-btn'>-</button>
+                            <p className='quantity-value'>{quantity}</p>
+                            <button onClick={handleIncrement} className='quantity-btn'>+</button>
                         </div>
                     </div>
                     <div className='add-cart-container'>
