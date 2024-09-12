@@ -26,7 +26,7 @@ export const ItemDetailContainer = () => {
 
 
     const handleAddCart = () => {
-        const updatedCart = addItem(
+        const addProduct = addItem(
             {
                 id: product.id,
                 title: product.title,
@@ -35,7 +35,7 @@ export const ItemDetailContainer = () => {
             },
             quantity
         );
-        console.log(updatedCart);
+        console.log(addProduct);
     };
 
     const handleColorSelection = (image) => {
