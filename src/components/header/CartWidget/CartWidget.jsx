@@ -11,7 +11,7 @@ export const CartWidget = () =>{
     return (
         <div className="cart-container">
             <img src="/ShoppingCart.svg" alt="Cart image" />
-            <p className="mb-0">{totalQuantity}</p>
+            {(totalQuantity != 0) && <p className="mb-0">{totalQuantity}</p>}
         </div>
     );
 }
