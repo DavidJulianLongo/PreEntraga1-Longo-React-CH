@@ -1,8 +1,8 @@
-import './CardComponent.css';
+import './ItemComponent.css';
 import { useState} from 'react';
 import { Link } from 'react-router-dom';
 
-export const CardComponent = ({ product }) => {
+export const ItemComponent = ({ product }) => {
     const { title, price, images, id } = product;
     const [image, setImage] = useState(images[0].url);
 

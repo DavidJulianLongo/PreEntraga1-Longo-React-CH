@@ -1,6 +1,6 @@
 # Proyecto Final - React JS (Coderhouse) - Comisión 60020
 
-Este es el proyecto del curso de React JS en Coderhouse. Es una aplicación de e-commerce creada con React que permite navegar por productos, filtrarlos por categoría y ver los detalles de cada producto.
+Este es el proyecto final del curso de React JS en Coderhouse. Es una aplicación de e-commerce creada con React que permite navegar por productos, filtrarlos por categoría y ver los detalles de cada producto.
 
 ## Características
 
@@ -9,7 +9,6 @@ Este es el proyecto del curso de React JS en Coderhouse. Es una aplicación de e
 - Detalles de productos individuales.
 - Carrito de compras básico.
 - Integración de Firestore para el almacenamiento de datos.
-- Estilo responsive con Bootstrap.
 
 ## Instalación
 
