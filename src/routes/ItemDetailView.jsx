@@ -1,10 +1,9 @@
-import { ItemDetail } from '../components/itemDetailContainer/itemDetail/ItemDetail';
-
+import { ItemDetailContainer } from '../components/itemDetailContainer/ItemDetailContainer';
 
 export const ItemDetailView = () => {
     return(
         <>
-            <ItemDetail />
+            <ItemDetailContainer />
         </>
     )
 }
