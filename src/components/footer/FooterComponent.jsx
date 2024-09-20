@@ -56,7 +56,7 @@ export const FooterComponent = () => {
 
                     <div className='payment-methods'>
                         <h5>Métodos de pago</h5>
-                        <img src='/src/assets/img/footer/metodospago.jpg' alt="" />
+                        <img src='/src/assets/img/footer/metodospago.jpg' alt="métodos de pago" />
                     </div>
                 </div>
             </footer>

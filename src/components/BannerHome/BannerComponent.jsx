@@ -4,10 +4,10 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 export const BannerComponent = () => {
     const images = [
-        "/src/assets/img/banner_home/razr50ultra.webp",
-        "/src/assets/img/banner_home/edgeultra.webp",
-        "/src/assets/img/banner_home/edgepro.webp",
-        "/src/assets/img/banner_home/g85.webp",
+        "/src/assets/img/bannerHome/razr50ultra.webp",
+        "/src/assets/img/bannerHome/edgeultra.webp",
+        "/src/assets/img/bannerHome/edgepro.webp",
+        "/src/assets/img/bannerHome/g85.webp",
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);

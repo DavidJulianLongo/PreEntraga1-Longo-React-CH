@@ -2,9 +2,10 @@ import { HeaderComponent } from './components/header/HeaderComponent';
 import { FooterComponent } from './components/footer/FooterComponent';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ItemListContainer } from './components/products/ItemListContainer';
-import { ItemDetailContainer } from './components/products/itemDetailContainer/ItemDetailContainer';
+import { ItemDetailContainer } from './components/itemDetailContainer/ItemDetailContainer';
 import { CartProvider } from './context/CartContext';
 import { HomeView } from './routes/HomeView';
+import { ItemDetailView } from './routes/ItemDetailView';
 
 
 
@@ -18,7 +19,7 @@ function App() {
           <Routes>
             <Route exact path='/' element={<HomeView />} />
             <Route exact path='/category/:model' element={<ItemListContainer />} />
-            <Route exact path='/item/:id' element={<ItemDetailContainer />} />
+            <Route exact path='/item/:productId' element={<ItemDetailView />} />
           </Routes>
         </CartProvider>
         <FooterComponent />
