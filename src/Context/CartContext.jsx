@@ -1,4 +1,4 @@
-import { createContext, useState,useEffect } from "react";
+import { createContext, useState, useEffect } from "react";
 
 export const CartContext = createContext();
 
@@ -34,7 +34,7 @@ export const CartProvider = ({ children }) => {
     // Calcula el total del carrito y formatea el total con . para mjor lectura
     const getTotal = () => {
         const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
-        return total.toLocaleString('es-ES'); 
+        return total.toLocaleString('es-ES');
     };
 
     // Eliminar un producto del carrito
@@ -42,7 +42,7 @@ export const CartProvider = ({ children }) => {
         const updatedCart = cart.map(item => {
             if (item.id === prodId && item.color === color) {
                 if (item.quantity > 1) {
-                    // Si hay más de un producto, simplemente reduce la cantidad
+                    // Si hay más de un mismo producto, reduce la cantidad 
                     return { ...item, quantity: item.quantity - 1 };
                 }
                 // Si la cantidad es 1, elimina el producto
@@ -54,8 +54,11 @@ export const CartProvider = ({ children }) => {
     };
 
     return (
-        <CartContext.Provider value={[cart, setCart, addItem, getTotal, removeItem]}>
-            {children}
-        </CartContext.Provider>
+        <>
+            <CartContext.Provider value={[cart, setCart, addItem, getTotal, removeItem]}>
+                {children}
+            </CartContext.Provider>
+        </>
+
     );
 };
