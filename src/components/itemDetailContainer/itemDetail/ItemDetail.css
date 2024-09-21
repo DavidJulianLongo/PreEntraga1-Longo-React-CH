@@ -8,6 +8,15 @@
     padding: 1rem;
 }
 
+.loading-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    font-size: 1.5rem;
+    font-weight: 600; 
+    color: #001428; 
+}
 .main-image {
     width: 31.25rem;
     margin: 0 auto;
