@@ -25,7 +25,7 @@ export const ItemComponent = ({ product }) => {
                         </button>
                     ))}
                 </div>
-                <p className="price">$ {price}</p>
+                <p className="price">$ {parseFloat(price).toLocaleString('es-ES')}</p>
                 <Link to={`/item/${id}`}><button className="card-btn">Ver más</button></Link>
             </article>
         </>

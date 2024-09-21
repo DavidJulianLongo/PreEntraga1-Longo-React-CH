@@ -21,7 +21,7 @@ export const ItemDetail = () => {
 
         getDoc(getProduct).then((snapshot) => {
             if (snapshot.exists()) {
-                setProduct({ id: snapshot.id, ...snapshot.data() });
+                setProduct({ id: snapshot.id, ...snapshot.data() }); 
                 setSelectedProduct(snapshot.data().images[0]);
             }
         });
@@ -49,16 +49,16 @@ export const ItemDetail = () => {
 
     //agrega el producto al carrito
     const handleAddCart = () => {
-        const addedProduct = addItem(
+        addItem(
             {
+                image: selectedProduct?.url,
                 id: product.id,
                 title: product.title,
                 price: product.price,
-                color: selectedProduct.colorName,
+                color: selectedProduct.colorName
             },
             quantity
         );
-        console.log(addedProduct);
     };
 
     return (
@@ -95,7 +95,7 @@ export const ItemDetail = () => {
                         </div>
                         <ItemQuantitySelector quantity={quantity} handleIncrement={handleIncrement} handleDecrement={handleDecrement} />
                         <div className='add-cart-container'>
-                            <p className='description-price'>$ {product.price}</p>
+                            <p className='description-price'>$ {parseFloat(product.price).toLocaleString('es-ES')}</p>
                             <AddItemButton handleAddCart={handleAddCart} isDisabled={!colorSelected} />
                         </div>
                     </div>

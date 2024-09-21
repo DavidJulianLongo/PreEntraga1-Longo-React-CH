@@ -1,10 +1,10 @@
 .cart-container{
     align-items: center;
-    border-left:  3px solid #ffffff2c;;
+    border-left:  3px solid #ffffff2c;
     display: flex;
     justify-content: center;
     margin-left: 1.25rem;
-    width: 6.25rem
+    width: 6.25rem;
 }
 
 .cart-container img{
