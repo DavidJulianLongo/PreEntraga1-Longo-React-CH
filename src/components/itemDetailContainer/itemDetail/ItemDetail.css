@@ -92,52 +92,6 @@
     font-size: .75rem;
     font-weight: 700;
 }
-/* 
-.quantity-container {
-    margin-bottom: 3rem; 
-}
-
-.quantity-controls {
-    display: flex;
-    align-items: center;
-    gap: 0.625rem;
-}
-
-.quantity-btn {
-    background-color: #e0e0e0; 
-    border: none;
-    border-radius: 0.75rem; 
-    box-shadow: 0 .125rem .1875rem rgba(0, 0, 0, 0.342);
-    width: 2.5rem; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.25rem; 
-    font-weight: bold;
-    color: #333; 
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.quantity-btn:hover {
-    background-color: #ccc;
-}
-
-.quantity-btn:active{
-    transform: scale(.95);
-}
-
-.quantity-value {
-    background-color: #e0e0e0; 
-    padding: 0.625rem 1.25rem; 
-    border-radius: 0.75rem; 
-    font-size: 1rem; 
-    font-weight: bold;
-    color: #333; 
-    text-align: center;
-    min-width: 9.375rem; 
-} */
-
 
 .add-cart-container {
     align-items: center;
@@ -161,7 +115,7 @@
 }
 
 .card-btn.disable {
-    background-color: rgb(153, 153, 153); 
+    background-color: #999999; 
     cursor: not-allowed; 
     opacity: 0.6; 
 }

@@ -6,6 +6,7 @@ export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
     const [orderId, setOrderId] = useState('');
+    const [orderDetails, setOrderDetails] = useState(null);
 
     const [cart, setCart] = useState(() => {
         // Obtiene el carrito del localStorage al iniciar
@@ -60,20 +61,20 @@ export const CartProvider = ({ children }) => {
     // Crea una nueva orden de compra y limpia el carrito
     const createNewOrder = (order) =>{
         const db = getFirestore();
-        const orders = collection(db, 'order');
+        const orders = collection(db, 'orders');
 
         addDoc(orders, order).then((snapshot) => {
             setOrderId(snapshot.id);
-            setCart([]);
+            setOrderDetails({ ...order, id: snapshot.id });
+            // setCart([]);
         })
     }
 
     return (
         <>
-            <CartContext.Provider value={[cart, setCart, addItem, getTotal, removeItem, createNewOrder]}>
+            <CartContext.Provider value={[cart, setCart, addItem, getTotal, removeItem, createNewOrder,  orderDetails, setOrderDetails]}>
                 {children}
             </CartContext.Provider>
         </>
-
     );
 };

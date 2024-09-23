@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import { CartContext } from '../../../context/CartContext';
 import { Link } from 'react-router-dom';
 import './UserInfo.css';
@@ -6,12 +6,26 @@ import './UserInfo.css';
 
 export const UserInfo = ({carrito, createNewOrder}) => {
     const [, , , getTotal] = useContext(CartContext);
-    const [userName, setUserName] = useState(['']);
-    const [userLastName, setUserLastName] = useState(['']);
-    const [userEmail, setUserEmail] = useState(['']);
-    const [userPhone, setUserPhone] = useState(['']);
+    const [userName, setUserName] = useState('');
+    const [userLastName, setUserLastName] = useState('');
+    const [userEmail, setUserEmail] = useState('');
+    const [userPhone, setUserPhone] = useState('');
+    const [completedForm , setCompletedForm] = useState(false);
+    
 
-    const handleSubmit = () => {
+
+    useEffect(() => {
+        if (userName !== '' && userLastName !== '' && userEmail !== '' && userPhone !== '') {
+            setCompletedForm(true);
+        } else {
+            setCompletedForm(false);
+        }
+    }, [userName, userLastName, userEmail, userPhone]);
+
+    const checkoutBtn = completedForm ? 'checkout-btn' : 'checkout-btn disable';
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
         const order = {
             buyer: {
                 userName,
@@ -24,6 +38,9 @@ export const UserInfo = ({carrito, createNewOrder}) => {
         }
         createNewOrder(order)
     }
+
+
+
     return (
         <>
             <div className='form-container'>
@@ -60,7 +77,7 @@ export const UserInfo = ({carrito, createNewOrder}) => {
                 <span>$ {getTotal()}</span>
                 <p>* Los precios anunciados en la Web incluyen el IVA.</p>
                 <p>* Completa el formulario para finalizar tu compra</p>
-                <button className='checkout-btn' onClick={handleSubmit}>Finalizar compra</button>
+                <button className={checkoutBtn} onClick={handleSubmit} disabled={!completedForm}>Finalizar compra</button>
                 <Link to={'/'}>
                     <p className='continue-shopping'>Elegir más productos</p>
                 </Link>

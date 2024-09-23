@@ -31,7 +31,7 @@ export const ItemDetail = () => {
     }, [productId]);
 
 
-    //selecciona el color del producto y cambia la imagen
+    //selecciona el color del producto y cambia la imagen 
     const handleColorSelection = (image) => {
         setSelectedProduct(image);
         setColorSelected(true);
