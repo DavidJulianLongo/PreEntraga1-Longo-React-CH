@@ -1,14 +1,18 @@
 import { createContext, useState, useEffect } from "react";
+import { addDoc, collection, getFirestore } from "firebase/firestore";
 
 export const CartContext = createContext();
 
 
 export const CartProvider = ({ children }) => {
+    const [orderId, setOrderId] = useState('');
+
     const [cart, setCart] = useState(() => {
         // Obtiene el carrito del localStorage al iniciar
         const storedCart = localStorage.getItem("cart");
         return storedCart ? JSON.parse(storedCart) : [];
     });
+
 
     // Guada el carrito en localStorage
     useEffect(() => {
@@ -53,9 +57,20 @@ export const CartProvider = ({ children }) => {
         setCart(updatedCart);
     };
 
+    // Crea una nueva orden de compra y limpia el carrito
+    const createNewOrder = (order) =>{
+        const db = getFirestore();
+        const orders = collection(db, 'order');
+
+        addDoc(orders, order).then((snapshot) => {
+            setOrderId(snapshot.id);
+            setCart([]);
+        })
+    }
+
     return (
         <>
-            <CartContext.Provider value={[cart, setCart, addItem, getTotal, removeItem]}>
+            <CartContext.Provider value={[cart, setCart, addItem, getTotal, removeItem, createNewOrder]}>
                 {children}
             </CartContext.Provider>
         </>

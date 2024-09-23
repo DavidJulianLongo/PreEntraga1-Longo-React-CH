@@ -29,7 +29,7 @@ export const CartTable = () =>{
                             <tr key={`${item.id}-${item.color}`}>
                                 <td className="product-info">
                                     <img src={item.image} alt={item.title} className="prod-image" />
-                                    <div>{item.title} - {item.color}</div>
+                                    <p>{item.title} - {item.color}</p>
                                 </td>
                                 <td>$ {parseFloat(item.price).toLocaleString('es-ES')}</td>
                                 <td>{item.quantity}</td>

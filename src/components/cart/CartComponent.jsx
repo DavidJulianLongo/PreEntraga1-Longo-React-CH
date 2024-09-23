@@ -1,17 +1,24 @@
 import { CartTable } from './cartTable/CartTable';
-import { CartSummary } from './cartSummary/CartSummary';
+import { UserInfo } from './userInfo/UserInfo';
+import { useContext } from 'react';
+import { CartContext } from '../../context/CartContext';
 import './CartComponent.css';
 
 
 export const CartComponent = () => {
+    const [cart, , , , , createNewOrder] = useContext(CartContext);
+
     return (
         <>
-            <div className="cart-detail-container">
-                <CartTable />
-                <CartSummary />
+            <div>
+                <div className='cart-detail-container'>
+                    <CartTable />
+                </div>
+                <div className='checkout'>
+                    <UserInfo carrito={cart} createNewOrder={createNewOrder} />
+                </div>
             </div>
         </>
-
     );
 };
 

@@ -8,9 +8,7 @@ import { ItemDetailView } from './routes/ItemDetailView';
 import { CartView } from './routes/cartView/CartView';
 
 
-
 function App() {
-
   return (
     <>
       <BrowserRouter>
