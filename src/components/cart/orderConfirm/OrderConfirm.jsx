@@ -1,38 +1,66 @@
 import { useContext } from "react";
 import { CartContext } from '../../../context/CartContext';
+import './OrderConfirm.css';
 
 export const OrderConfirm = () => {
-    const [,setCart , , , , , orderDetails, setOrderDetails] = useContext(CartContext); // Asegúrate de que `setOrderDetails` esté disponible
+    const [, setCart, , , , , orderDetails, setOrderDetails] = useContext(CartContext);
 
     const handleClose = () => {
-        setOrderDetails(null); 
+        setOrderDetails(null);
         setCart([]);
-        
+
     };
 
+    const totalAmount = orderDetails.items.reduce((acc, item) => acc + item.price * item.quantity, 0);
+
     return (
-        <div>
+        <>
+             <div className="order-confirm">
             {orderDetails ? (
-                <div>
+                <div className="order-details">
+                    <div className="order-details-info">
                     <h2>¡Gracias por tu compra!</h2>
-                    <p>ID de la Orden: {orderDetails.id}</p>
-                    <p>Nombre: {orderDetails.buyer.userName} {orderDetails.buyer.userLastName}</p>
-                    <p>Email: {orderDetails.buyer.userEmail}</p>
-                    <p>Teléfono: {orderDetails.buyer.userPhone}</p>
+                    <p className="order-id">ID de la Orden: {orderDetails.id}</p>
+                    <p className="buyer-info">Nombre: {orderDetails.buyer.userName} {orderDetails.buyer.userLastName}</p>
+                    <p className="buyer-info">Email: {orderDetails.buyer.userEmail}</p>
+                    <p className="buyer-info">Teléfono: {orderDetails.buyer.userPhone}</p>
                     <h3>Detalles de los productos:</h3>
-                    <ul>
-                        {orderDetails.items.map((item, index) => (
-                            <li key={index}>
-                             <img src={item.image} alt='imagen del producto' /> - {item.title} - {item.color} - Cantidad: {item.quantity} - Precio: ${item.price}
-                            </li>
-                        ))}
-                    </ul>
-                    <p>Total: ${orderDetails.items.reduce((acc, item) => acc + item.price * item.quantity, 0)}</p>
-                    <button onClick={handleClose}>Cerrar</button>
+                    </div>
+                    <table className="order-table">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Color</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {orderDetails.items.map((item, index) => (
+                                <tr key={index}>
+                                    <td className="product-info">
+                                        <img src={item.image} alt='imagen del producto' className="prod-image" />
+                                        {item.title}
+                                    </td>
+                                    <td>{item.color}</td>
+                                    <td>{item.quantity}</td>
+                                    <td>${item.price.toLocaleString('es-ES')}</td>
+                                    <td>${(item.price * item.quantity).toLocaleString('es-ES')}</td>
+                                </tr>
+                            ))}
+                            <tr className="total-row">
+                                <td colSpan="4" className="total-label">Total</td>
+                                <td>${totalAmount.toLocaleString('es-ES')}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button className="close-btn" onClick={handleClose}>Cerrar</button>
                 </div>
             ) : (
                 <p>No hay ninguna orden disponible.</p>
             )}
         </div>
+        </>
     );
 };
