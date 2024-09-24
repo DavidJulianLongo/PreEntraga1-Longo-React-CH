@@ -1,4 +1,3 @@
-
 import { NavItem } from '../header/NavItem/NavItem';
 import { Link } from 'react-router-dom';
 import './FooterComponent.css';
