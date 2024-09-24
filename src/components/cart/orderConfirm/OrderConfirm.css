@@ -12,10 +12,18 @@
 }
 
 .order-details h2{
+    text-align: center;
     margin-bottom: 2rem;
 }
-.order-id,
-.buyer-info,
+
+.buyer-info{
+    font-size: .875rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.order-id{
+    margin-bottom: 1rem;
+}
 .total {
     font-weight: 600;
 }
@@ -28,7 +36,6 @@
 
 .order-table th,
 .order-table td {
-    border: .0625rem solid #ddd;
     padding: .5rem;
     text-align: left;
 }
@@ -54,11 +61,13 @@
 
 .close-btn {
     background-color: #ff4d4d;
-    color: white;
     border: none;
-    padding: .625rem .9375rem;
     border-radius: .3125rem;
+    color: white;
     cursor: pointer;
+    margin: 1rem auto;
+    padding: .625rem .9375rem;
+    width: 12.5rem;
 }
 
 .close-btn:hover {

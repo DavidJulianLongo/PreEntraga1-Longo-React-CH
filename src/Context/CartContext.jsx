@@ -42,23 +42,21 @@ export const CartProvider = ({ children }) => {
         return total.toLocaleString('es-ES');
     };
 
-    // Eliminar un producto del carrito
+    // Elimina un producto del carrito, si hay más de un mismo producto reduce la cantidad, si la cantidad es 1  elimina el producto
     const removeItem = (prodId, color) => {
         const updatedCart = cart.map(item => {
             if (item.id === prodId && item.color === color) {
                 if (item.quantity > 1) {
-                    // Si hay más de un mismo producto, reduce la cantidad 
                     return { ...item, quantity: item.quantity - 1 };
                 }
-                // Si la cantidad es 1, elimina el producto
                 return null;
             }
             return item;
-        }).filter(item => item !== null); // Filtra los productos que son null
+        }).filter(item => item !== null);
         setCart(updatedCart);
     };
 
-    // Crea una nueva orden de compra y limpia el carrito
+    // Crea una nueva orden de compra 
     const createNewOrder = (order) =>{
         const db = getFirestore();
         const orders = collection(db, 'orders');
@@ -66,9 +64,8 @@ export const CartProvider = ({ children }) => {
         addDoc(orders, order).then((snapshot) => {
             setOrderId(snapshot.id);
             setOrderDetails({ ...order, id: snapshot.id });
-            // setCart([]);
-        })
-    }
+        });
+    };
 
     return (
         <>
