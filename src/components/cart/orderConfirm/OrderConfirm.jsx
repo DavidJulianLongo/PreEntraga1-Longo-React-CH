@@ -20,7 +20,7 @@ export const OrderConfirm = () => {
                     <div className='order-details'>
                         <h2>¡Gracias por tu compra!</h2>
                         <div className='order-details-info'>
-                            <h3>Orden de compra</h3>
+                            <h3>Orden de compra:</h3>
                             <p className='order-id'>ID de la Orden: {orderDetails.id}</p>
                             <p className='buyer-info'>Nombre: {orderDetails.buyer.userName} {orderDetails.buyer.userLastName}</p>
                             <p className='buyer-info'>Email: {orderDetails.buyer.userEmail}</p>
@@ -31,7 +31,6 @@ export const OrderConfirm = () => {
                             <thead>
                                 <tr>
                                     <th>Producto</th>
-                                    <th>Color</th>
                                     <th>Cantidad</th>
                                     <th>Precio</th>
                                     <th>Total</th>
@@ -49,7 +48,7 @@ export const OrderConfirm = () => {
                                     </tr>
                                 ))}
                                 <tr className='total-row'>
-                                    <td colSpan='4' className='total-label'>Total</td>
+                                    <td colSpan='3' className='total-label'>Total</td>
                                     <td>${totalAmount.toLocaleString('es-ES')}</td>
                                 </tr>
                             </tbody>

@@ -30,14 +30,13 @@
 
 .order-table {
     width: 100%;
-    border-collapse: collapse;
     margin: 1rem 0;
 }
 
 .order-table th,
 .order-table td {
     padding: .5rem;
-    text-align: left;
+    text-align: center;
 }
 
 .order-table th {
@@ -63,7 +62,7 @@
     background-color: #ff4d4d;
     border: none;
     border-radius: .3125rem;
-    color: white;
+    color: #ffffff;
     cursor: pointer;
     margin: 1rem auto;
     padding: .625rem .9375rem;
