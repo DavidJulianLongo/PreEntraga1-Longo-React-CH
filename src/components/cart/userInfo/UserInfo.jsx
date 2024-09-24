@@ -1,6 +1,7 @@
 import { useState, useContext, useEffect } from 'react';
 import { CartContext } from '../../../context/CartContext';
 import { Link } from 'react-router-dom';
+import ReactLoading from 'react-loading';
 import './UserInfo.css';
 
 
@@ -11,9 +12,8 @@ export const UserInfo = ({carrito, createNewOrder}) => {
     const [userEmail, setUserEmail] = useState('');
     const [userPhone, setUserPhone] = useState('');
     const [completedForm , setCompletedForm] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
     
-
-
     useEffect(() => {
         if (userName !== '' && userLastName !== '' && userEmail !== '' && userPhone !== '') {
             setCompletedForm(true);
@@ -26,6 +26,7 @@ export const UserInfo = ({carrito, createNewOrder}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setIsLoading(true); 
         const order = {
             buyer: {
                 userName,
@@ -36,9 +37,8 @@ export const UserInfo = ({carrito, createNewOrder}) => {
             items: carrito,
             create: new Date()
         }
-        createNewOrder(order)
+        createNewOrder(order);
     }
-
 
 
     return (
@@ -78,6 +78,7 @@ export const UserInfo = ({carrito, createNewOrder}) => {
                 <p>* Los precios anunciados en la Web incluyen el IVA.</p>
                 <p>* Completa el formulario para finalizar tu compra</p>
                 <button className={checkoutBtn} onClick={handleSubmit} disabled={!completedForm}>Finalizar compra</button>
+                {isLoading && (<div className='loading-container'><p>Generando orden de compra...</p><ReactLoading type="spin" color="#000" height={30} width={30} /></div>)}
                 <Link to={'/'}>
                     <p className='continue-shopping'>Elegir más productos</p>
                 </Link>

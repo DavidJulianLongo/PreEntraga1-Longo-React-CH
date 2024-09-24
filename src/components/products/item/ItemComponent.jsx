@@ -1,6 +1,6 @@
-import './ItemComponent.css';
 import { useState} from 'react';
 import { Link } from 'react-router-dom';
+import './ItemComponent.css';
 
 export const ItemComponent = ({ product }) => {
     const { title, price, images, id } = product;

@@ -7,7 +7,5 @@ export const AddItemButton = ({ handleAddCart, isDisabled }) => {
         <>  
             <button className={buttonClass} onClick={handleAddCart} disabled={isDisabled}>Agregar al carrito</button>
         </>
-            
-        
     );
 };

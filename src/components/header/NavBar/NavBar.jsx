@@ -1,8 +1,8 @@
-import './NavBar.css';
 import { CartWidget } from "../CartWidget/CartWidget";
 import { LogoComponent } from '../LogoComponent/LogoComponent';
 import { Link } from 'react-router-dom';
 import { NavItem } from '../NavItem/NavItem';
+import './NavBar.css';
 
 
 export const NavBar = () => {

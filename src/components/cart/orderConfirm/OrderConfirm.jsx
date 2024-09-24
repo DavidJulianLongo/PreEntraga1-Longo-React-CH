@@ -4,7 +4,8 @@ import './OrderConfirm.css';
 
 export const OrderConfirm = () => {
     const [, , , , , , orderDetails, , closeOrder] = useContext(CartContext);
- 
+
+
     const handleClose = () => {
         closeOrder();
     };

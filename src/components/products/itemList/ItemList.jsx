@@ -12,25 +12,28 @@ export const ItemList = () => {
         const productsCollection = collection(db, 'productos');
 
         let getProducts;
-        if (model){
+        if (model) {
             getProducts = query(productsCollection, where('model', '==', model));
-        }else{
+        } else {
             getProducts = productsCollection;
         }
 
-        getDocs(getProducts).then((snapshot) =>{
+        getDocs(getProducts).then((snapshot) => {
             const products = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
             setProducts(products);
         })
     }, [model]);
 
     return (
-        <main>
-            <div className="products-container">
-                {products.map((product) => (
-                    <ItemComponent key={product.id} product={product} />
-                ))}
-            </div>
-        </main>
+        <>
+            <main>
+                <div className="products-container">
+                    {products.map((product) => (
+                        <ItemComponent key={product.id} product={product} />
+                    ))}
+                </div>
+            </main>
+        </>
+
     );
 };
