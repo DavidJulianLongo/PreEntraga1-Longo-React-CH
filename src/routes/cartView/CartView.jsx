@@ -7,7 +7,7 @@ import { OrderConfirm } from "../../components/cart/orderConfirm/OrderConfirm";
 
 
 export const CartView = () => {
-    const [cart, , , , , , orderDetails] = useContext(CartContext);
+    const [cart, , addItem, , , , orderDetails, , , isOrderConfirmed] = useContext(CartContext);
 
     // Si no hay productos en el carrito muestra un mensaje con un botón que redirecciona a la HomeView
     if (cart.length === 0) {
@@ -27,6 +27,11 @@ export const CartView = () => {
         return <OrderConfirm />;
     }
 
+    const handleAddToCart = (product) => {
+        if (!isOrderConfirmed) {
+            addItem(product, quantity);
+        }
+    };
     return (
         <>
             <CartComponent />

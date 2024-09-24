@@ -3,15 +3,13 @@ import { CartContext } from '../../../context/CartContext';
 import './OrderConfirm.css';
 
 export const OrderConfirm = () => {
-    const [, setCart, , , , , orderDetails, setOrderDetails] = useContext(CartContext);
-
+    const [, , , , , , orderDetails, , closeOrder] = useContext(CartContext);
+ 
     const handleClose = () => {
-        setOrderDetails(null);
-        setCart([]);
-
+        closeOrder();
     };
 
-    const totalAmount = orderDetails.items.reduce((acc, item) => acc + item.price * item.quantity, 0);
+    const total = orderDetails.items.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
     return (
         <>
@@ -48,15 +46,17 @@ export const OrderConfirm = () => {
                                     </tr>
                                 ))}
                                 <tr className='total-row'>
-                                    <td colSpan='3' className='total-label'>Total</td>
-                                    <td>${totalAmount.toLocaleString('es-ES')}</td>
+                                    <td colSpan='3' className='total-label'>Total de compra</td>
+                                    <td>${total.toLocaleString('es-ES')}</td>
                                 </tr>
                             </tbody>
                         </table>
                         <div>
                             <button className='close-btn' onClick={handleClose}>Cerrar</button>
                         </div>
-
+                        <div className='continue'>
+                            <p>* Guarda los datos y preciona cerrar para seguir comprando</p>
+                        </div>
                     </div>
                 ) : (
                     <p>No hay ninguna orden disponible.</p>

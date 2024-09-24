@@ -7,9 +7,10 @@ export const CartContext = createContext();
 export const CartProvider = ({ children }) => {
     const [orderId, setOrderId] = useState('');
     const [orderDetails, setOrderDetails] = useState(null);
-
+    const [orderConfirmed, setOrderConfirmed] = useState(false);
+    
+    // Obtiene el carrito del localStorage al iniciar
     const [cart, setCart] = useState(() => {
-        // Obtiene el carrito del localStorage al iniciar
         const storedCart = localStorage.getItem("cart");
         return storedCart ? JSON.parse(storedCart) : [];
     });
@@ -20,12 +21,15 @@ export const CartProvider = ({ children }) => {
         localStorage.setItem("cart", JSON.stringify(cart));
     }, [cart]);
 
+
     // Verifica si el producto ya existe en el carrito (comparando id y color)
     //Si el producto está en carrito, se actualiza su cantiad, y si no existe lo agrega
     const addItem = (prod, quantity) => {
-        const existingProduct = cart.find(item => item.id === prod.id && item.color === prod.color);
+        if (orderConfirmed) return;
 
+        const existingProduct = cart.find(item => item.id === prod.id && item.color === prod.color);
         let updatedCart = [];
+
         if (existingProduct) {
             updatedCart = cart.map((item) => item.id === prod.id && item.color === prod.color ? { ...item, quantity: item.quantity + quantity } : item);
         } else {
@@ -64,12 +68,19 @@ export const CartProvider = ({ children }) => {
         addDoc(orders, order).then((snapshot) => {
             setOrderId(snapshot.id);
             setOrderDetails({ ...order, id: snapshot.id });
+            setOrderConfirmed(true);
         });
+    };
+
+    const closeOrder = () => {
+        setOrderDetails(null);
+        setCart([]);
+        setOrderConfirmed(false);
     };
 
     return (
         <>
-            <CartContext.Provider value={[cart, setCart, addItem, getTotal, removeItem, createNewOrder,  orderDetails, setOrderDetails]}>
+            <CartContext.Provider value={[cart, setCart, addItem, getTotal, removeItem, createNewOrder,  orderDetails, setOrderDetails, closeOrder, orderConfirmed, setOrderConfirmed]}>
                 {children}
             </CartContext.Provider>
         </>
