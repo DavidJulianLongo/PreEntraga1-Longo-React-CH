@@ -29,7 +29,7 @@ Instala las dependencias necesarias:
 - **react-router-dom**: Para la navegación entre páginas.
 - **react-icons**: Para íconos de redes sociales.
 - **bootstrap**: Para algunos estilos.
--**react-loading**: Para el loading al cargar orden de compra.
+- **react-loading**: Para el loading al cargar orden de compra.
 
 
 ### 3. Configuración de Firestore
